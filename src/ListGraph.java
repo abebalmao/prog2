@@ -1,10 +1,6 @@
 import java.io.Serializable;
 import java.util.*;
 
-// PROG2 VT2022, Inlämningsuppgift del 1//
-// Grupp 212
-// Albin Visteus alvi9625
-
 public class ListGraph<T> implements Graph<T>, Serializable {
 
     private HashMap<T, Set<Edge<T>>> locations = new HashMap<>();
@@ -33,13 +29,7 @@ public class ListGraph<T> implements Graph<T>, Serializable {
         } else if (getEdgeBetween(t1, t2) != null) {
             return;
         }
-
-        /* TODO: it breaks with this
-        else if (getEdgeBetween(t1, t2) != null) {
-            throw new IllegalStateException();
-        }
-        */
-
+        
         Set<Edge<T>> firstSet = locations.get(t1);
         Edge<T> edge1 = new Edge<T>(t2, name, weight);
         firstSet.add(edge1);
