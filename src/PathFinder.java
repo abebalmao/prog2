@@ -19,10 +19,6 @@ import javax.imageio.ImageIO;
 import java.io.*;
 import java.util.Optional;
 
-// PROG2 VT2022, Inlämningsuppgift del 2
-// Grupp 212
-// Albin Visteus, alvi9625
-
 public class PathFinder extends Application {
 
     private BorderPane borderPane = new BorderPane();
@@ -110,11 +106,6 @@ public class PathFinder extends Application {
         borderPane.setTop(vbox);
         borderPane.setCenter(backgroundPane);
 
-        /*
-        borderPane.setTop(menuBar);
-        borderPane.setCenter(buttonPane);
-        borderPane.setBottom(backgroundPane);
-        */
         Scene scene = new Scene(borderPane);
         primaryStage.setScene(scene);
         primaryStage.setTitle("PathFinder");
@@ -186,12 +177,7 @@ public class PathFinder extends Application {
                 changes = false;
                 return false;
             }
-        /*
-        if (changes("Unsaved changes, continue anyways?")) {
-            return true;
-        } else return !changes;
-
-         */
+      
         }
         return true;
     }
