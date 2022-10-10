@@ -1,10 +1,6 @@
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
-// PROG2 VT2022, Inlämningsuppgift del 1
-// Grupp 212
-// Albin Visteus, alvi9625
-
 public class Place extends Circle {
     private final String name;
     private boolean selected;
