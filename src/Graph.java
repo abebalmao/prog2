@@ -2,10 +2,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-// PROG2 VT2022, Inlämningsuppgift del 1
-// Grupp 212
-// Albin Visteus, alvi9625
-
 public interface Graph<T> {
 
     void add(T node);
