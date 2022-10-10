@@ -25,11 +25,9 @@ public class Edge<T> implements Serializable {
     }
 
     public void setWeight(int weight) {
-        // Om vikten är negativ, kasta exception
         if (weight < 0) {
             throw new IllegalArgumentException();
         } else {
-            // Annars sätt vikten
             this.weight = weight;
         }
     }
